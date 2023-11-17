@@ -44,7 +44,7 @@ export default function Login() {
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              <span className="text-[#fc4f5a]"> Sign in to</span> account Sign
+              <span className="text-[#fc4f5a]"> Sign </span> In
             </h2>
           </div>
           <MessageCard message={error} type={ETypes.DANGER} visible={!!error} />
@@ -120,7 +120,7 @@ export default function Login() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-[#fc4f5a] py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <LockClosedIcon

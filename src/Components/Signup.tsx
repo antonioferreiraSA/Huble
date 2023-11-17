@@ -45,7 +45,7 @@ export default function Signup() {
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Create an account
+              <span className="text-[#fc4f5a]"> Create</span> Account
             </h2>
           </div>
           <MessageCard message={error} type={ETypes.DANGER} visible={!!error} />
@@ -106,11 +106,11 @@ export default function Signup() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-[#fc4f5a] py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <LockClosedIcon
-                    className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                    className="h-5 w-5 text-white group-hover:text-white"
                     aria-hidden="true"
                   />
                 </span>
@@ -119,7 +119,7 @@ export default function Signup() {
             </div>
             <div className="text-sm text-center">
               <Link
-                className="font-medium text-indigo-600 hover:text-indigo-500 underline"
+                className="font-medium  text-gray-500 hover:text-[#fc4f5a] underline"
                 to="/login"
               >
                 Already have an account? Login
