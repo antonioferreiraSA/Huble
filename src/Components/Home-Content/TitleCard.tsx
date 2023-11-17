@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WhyHubleComponent = () => {
+const TitleCard = () => {
   return (
     <div className="text-center ">
       <h1 className="text-4xl font-bold">
@@ -13,4 +13,4 @@ const WhyHubleComponent = () => {
   )
 }
 
-export default WhyHubleComponent
+export default TitleCard

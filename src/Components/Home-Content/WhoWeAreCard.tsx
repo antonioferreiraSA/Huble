@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CardOne = () => {
+const WhoWeAreCard = () => {
   return (
     <div className="flex p-8 transition-transform duration-500 ease-in-out transform -translate-y-0 hover:-translate-y-2">
       {/* Left side */}
@@ -52,4 +52,4 @@ const CardOne = () => {
   )
 }
 
-export default CardOne
+export default WhoWeAreCard
