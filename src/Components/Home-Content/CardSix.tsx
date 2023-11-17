@@ -32,12 +32,22 @@ const CardSix = () => {
           </ul>
         </h2>
         <div className="mb-4">
-          <button className="bg-blue-500 text-white px-4 py-2 mr-2">
-            Button 1
-          </button>
-          <button className="bg-green-500 text-white px-4 py-2">
-            Button 2
-          </button>
+          <a
+            href="https://www.hubledigital.com/" // Replace with the actual URL you want to open
+            target="_blank"
+          >
+            <button className="border-grey-500 border-2 text-gray-600 px-4 py-2 mr-2  rounded-3xl">
+              More Info
+            </button>
+          </a>
+          <a
+            href="https://www.hubledigital.com/careers/working-at-huble-digital" // Replace with the actual URL you want to open
+            target="_blank"
+          >
+            <button className="bg-[#fc4f5a] text-white px-4 py-2 rounded-3xl">
+              The Team
+            </button>
+          </a>
         </div>
       </div>
 
