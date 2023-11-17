@@ -3,6 +3,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import { ETypes, MessageCard } from './Atoms/MessageCard'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
+import HubleLogo from '../assets/2.webp'
 
 export default function ForgotPassword() {
   const emailRef = useRef<HTMLInputElement>(null)
@@ -34,11 +35,11 @@ export default function ForgotPassword() {
           <div>
             <img
               className="mx-auto h-12 w-auto"
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+              src={HubleLogo}
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Password Reset
+              <span className="text-[#fc4f5a]"> Password </span> Reset
             </h2>
           </div>
           <MessageCard
@@ -51,6 +52,9 @@ export default function ForgotPassword() {
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
+                <h2 className=" pl-2  text-left  text-lg pb-1 font-bold tracking-tight text-gray-900">
+                  Email
+                </h2>
                 <label htmlFor="email-address" className="sr-only">
                   Email address
                 </label>
@@ -61,7 +65,7 @@ export default function ForgotPassword() {
                   autoComplete="email"
                   ref={emailRef}
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-full border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Email address"
                 />
               </div>
@@ -71,11 +75,11 @@ export default function ForgotPassword() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="group relative transition-colors flex w-full justify-center rounded-md border border-transparent bg-[#fc4f5a] py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <LockClosedIcon
-                    className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                    className="h-5 w-5 text-white group-hover:text-white"
                     aria-hidden="true"
                   />
                 </span>
@@ -84,7 +88,7 @@ export default function ForgotPassword() {
             </div>
             <div className="text-sm text-center">
               <Link
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-gray-500 hover:text-[#fc4f5a]"
                 to="/login"
               >
                 Back to login
