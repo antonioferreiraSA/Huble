@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardOne = () => {
   return (
-    <div className="flex p-8">
+    <div className="flex p-8 transition-transform duration-500 ease-in-out transform -translate-y-0 hover:-translate-y-2">
       {/* Left side */}
       <div className="w-1/2 pr-8">
         <h1 className="text-4xl font-bold mb-4">
@@ -20,7 +20,7 @@ const CardOne = () => {
             href="https://www.hubledigital.com/" // Replace with the actual URL you want to open
             target="_blank"
           >
-            <button className="border-grey-500 border-2 text-gray-600 px-4 py-2 mr-2  rounded-3xl">
+            <button className="border-grey-500 border-2 text-gray-600 px-4 py-2 mr-2 rounded-3xl">
               More Info
             </button>
           </a>
@@ -43,9 +43,9 @@ const CardOne = () => {
           height="315"
           src="https://www.youtube.com/embed/NRPekuPcLic?si=YWm7AGiod-tA10LG"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>
