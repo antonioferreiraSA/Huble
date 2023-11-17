@@ -5,6 +5,7 @@ import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { ETypes, MessageCard } from './Atoms/MessageCard'
 import { AiFillExclamationCircle } from 'react-icons/ai'
 import { useToast, EToastTypes } from '../contexts/ToastContext'
+import Download from '../assets/2.webp'
 
 export default function UpdateProfile() {
   const emailRef = useRef<HTMLInputElement>(null)
@@ -53,11 +54,11 @@ export default function UpdateProfile() {
           <div>
             <img
               className="mx-auto h-12 w-auto"
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+              src={Download}
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Update Profile
+              <span className="text-[#fc4f5a]">Update</span> Profile
             </h2>
           </div>
           <MessageCard message={error} type={ETypes.DANGER} visible={!!error} />
@@ -87,24 +88,30 @@ export default function UpdateProfile() {
                 the same
               </h1>
               <div>
+                <h2 className=" pl-2  text-left  text-lg py-2 font-bold tracking-tight text-gray-900">
+                  Password
+                </h2>
                 <label className="sr-only">Password</label>
                 <input
                   id="password"
                   name="password"
                   type="password"
                   ref={passwordRef}
-                  className="relative block w-full appearance-none rounded-none rounded-t-md  border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none  rounded-full  border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Password"
                 />
               </div>
               <div>
+                <h2 className=" pl-2  text-left  text-lg  py-2 font-bold tracking-tight text-gray-900">
+                  Confirm Password
+                </h2>
                 <label className="sr-only">Confirm Password</label>
                 <input
                   id="confirm-password"
                   name="confirm-password"
                   type="password"
                   ref={passwordConfirmRef}
-                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-full border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Confirm Password"
                 />
               </div>

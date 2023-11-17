@@ -39,12 +39,13 @@ const CardOne = () => {
       <div className="w-1/2">
         {/* Embed your video component here */}
         <iframe
-          title="Sample Video"
-          className="w-full h-64"
-          src="https://www.youtube.com/embed/your-video-id"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NRPekuPcLic?si=YWm7AGiod-tA10LG"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
         ></iframe>
       </div>
     </div>

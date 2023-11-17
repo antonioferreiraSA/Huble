@@ -19,7 +19,18 @@ export default function DashNavbar() {
 
   const [navigation, setNavigation] = useState([
     { name: 'Dashboard', href: '/', current: false },
-    { name: 'Projects', href: '/projects', current: false },
+    {
+      name: 'Locations',
+      href: 'https://www.hubledigital.com/careers/locations',
+      current: false,
+      newTab: true,
+    },
+    {
+      name: 'Hubspot',
+      href: 'https://www.hubledigital.com/',
+      current: false,
+      newTab: true,
+    },
   ])
 
   useEffect(() => {
@@ -114,13 +125,13 @@ export default function DashNavbar() {
                 </div>
               </div>
               <div className="absolute gap-4 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
+                {/* <button
                   type="button"
                   className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                </button> */}
 
                 {/* Profile dropdown */}
                 <DropdownMenu

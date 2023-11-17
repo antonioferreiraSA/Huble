@@ -5,7 +5,7 @@ import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { ETypes, MessageCard } from './Atoms/MessageCard'
 import { SpacerWithText } from './Atoms/SpacerWithText'
 import { SocialSignIn } from './SocialSignIn'
-import HubleLogo from '../assets/Huble-logo.png'
+import HubleLogo from '../assets/2.webp'
 
 export default function Login() {
   const emailRef = useRef<HTMLInputElement>(null)
@@ -44,7 +44,7 @@ export default function Login() {
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Sign in to your account
+              <span className="text-[#fc4f5a]"> Sign in to</span> account Sign
             </h2>
           </div>
           <MessageCard message={error} type={ETypes.DANGER} visible={!!error} />
@@ -108,7 +108,7 @@ export default function Login() {
 
               <div className="text-sm">
                 <Link
-                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                  className="font-medium text-gray-500 hover:text-[#fc4f5a] underline"
                   to="/forgot-password"
                 >
                   Forgot your password?
@@ -124,7 +124,7 @@ export default function Login() {
               >
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <LockClosedIcon
-                    className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
+                    className="h-5 w-5 text-white group-hover:text-[#fc4f5a]"
                     aria-hidden="true"
                   />
                 </span>
@@ -133,10 +133,10 @@ export default function Login() {
             </div>
             <div className="text-sm text-center">
               <Link
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium   text-gray-500 hover:text-[#fc4f5a] underline"
                 to="/signup"
               >
-                Don't have an account?
+                Don't have an account? Signup
               </Link>
             </div>
           </form>

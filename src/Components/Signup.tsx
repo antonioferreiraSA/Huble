@@ -53,6 +53,9 @@ export default function Signup() {
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
+                <h2 className=" pl-2  text-left  text-lg pb-1 font-bold tracking-tight text-gray-900">
+                  Email address
+                </h2>
                 <label htmlFor="email-address" className="sr-only">
                   Email address
                 </label>
@@ -63,11 +66,14 @@ export default function Signup() {
                   autoComplete="email"
                   ref={emailRef}
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-full border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Email address"
                 />
               </div>
               <div>
+                <h2 className=" pl-2  text-left  text-lg pb-1 font-bold tracking-tight text-gray-900">
+                  Password
+                </h2>
                 <label className="sr-only">Password</label>
                 <input
                   id="password"
@@ -75,11 +81,14 @@ export default function Signup() {
                   type="password"
                   ref={passwordRef}
                   required
-                  className="relative block w-full appearance-none rounded-none  border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-full  border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Password"
                 />
               </div>
               <div>
+                <h2 className=" pl-2  text-left  text-lg pb-1 font-bold tracking-tight text-gray-900">
+                  Confirm Password
+                </h2>
                 <label className="sr-only">Confirm Password</label>
                 <input
                   id="confirm-password"
@@ -87,7 +96,7 @@ export default function Signup() {
                   type="password"
                   ref={passwordConfirmRef}
                   required
-                  className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  className="relative block w-full appearance-none rounded-full border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                   placeholder="Confirm Password"
                 />
               </div>
@@ -110,10 +119,10 @@ export default function Signup() {
             </div>
             <div className="text-sm text-center">
               <Link
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-indigo-600 hover:text-indigo-500 underline"
                 to="/login"
               >
-                Already have an account?
+                Already have an account? Login
               </Link>
             </div>
           </form>
