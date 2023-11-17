@@ -1,9 +1,9 @@
-import CardOne from './Home-Content/CardOne'
-import CardTwo from './Home-Content/CardTwo'
-import CardThree from './Home-Content/CardThree'
-import CardFour from './Home-Content/CardFour'
-import CardFive from './Home-Content/CardFive'
-import CardSix from './Home-Content/CardSix'
+import CardOne from './Home-Content/WhoWeAreCard'
+import CardTwo from './Home-Content/YouCanDoCard'
+import CardThree from './Home-Content/TitleCard'
+import CardFour from './Home-Content/YouCanGrowCard'
+import CardFive from './Home-Content/InspiredCard'
+import CardSix from './Home-Content/ValuedCard'
 
 export default function Dashboard() {
   return (
