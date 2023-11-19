@@ -17,9 +17,9 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "*": ["src/*", "components/*"]
+      "*": ["src/*", "Components/*"]
     }
   },
-  "include": ["src", "components","firebase.js"],
+  "include": ["src", "Components","firebase.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
