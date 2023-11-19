@@ -20,7 +20,10 @@ const InspiredCard = () => {
           <span className="text-[#fc4f5a]"> GET INSPIRED</span>
         </h1>
         <h2 className="text-xl text-gray-600 mb-4">
-          <ul className="list-disc pl-4">
+          <ul
+            style={{ fontFamily: 'proxima_nova, sans-serif' }}
+            className="list-disc pl-4"
+          >
             <li>You are part of something worthwhile</li>
             <li>
               Working for an industry-leading HubSpot Agency with its own IP

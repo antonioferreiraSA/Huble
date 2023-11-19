@@ -19,7 +19,10 @@ const YouCanDoCard = () => {
           YOU CAN
           <span className="text-[#fc4f5a]"> DO YOU</span>
         </h1>
-        <h2 className="text-xl text-gray-600 mb-4">
+        <h2
+          style={{ fontFamily: 'proxima_nova, sans-serif' }}
+          className="text-xl text-gray-600 mb-4"
+        >
           <ul className="list-disc pl-4">
             <li>You have the flexibility to work how and where you want</li>
             <li>Work from home, an office, or both</li>

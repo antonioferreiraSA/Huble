@@ -10,7 +10,10 @@ const ValuedCard = () => {
           <span className="text-[#fc4f5a]"> VALUED</span>
         </h1>
         <h2 className="text-xl text-gray-600 mb-4">
-          <ul className="list-disc pl-4">
+          <ul
+            style={{ fontFamily: 'proxima_nova, sans-serif' }}
+            className="list-disc pl-4"
+          >
             <li>We are investing in you</li>
             <li>
               Helping you reach your goals with regular performance feedback,

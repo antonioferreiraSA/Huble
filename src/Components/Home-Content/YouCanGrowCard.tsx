@@ -10,7 +10,10 @@ const YouCanGrowCard = () => {
           <span className="text-[#fc4f5a]"> GROW</span>
         </h1>
         <h2 className="text-xl text-gray-600 mb-4">
-          <ul className="list-disc pl-4">
+          <ul
+            style={{ fontFamily: 'proxima_nova, sans-serif' }}
+            className="list-disc pl-4"
+          >
             <li>We help you grow as people and professionals</li>
             <li>Knowledge is shared openly and consistently</li>
             <li>

@@ -8,7 +8,10 @@ const WhoWeAreCard = () => {
         <h1 className="text-4xl font-bold mb-4">
           <span className="text-[#fc4f5a]">WHO</span> WE ARE
         </h1>
-        <h2 className="text-xl text-gray-600 mb-4">
+        <h2
+          style={{ fontFamily: 'proxima_nova, sans-serif' }}
+          className="text-xl text-gray-600 mb-4"
+        >
           To always be a company where employees can thrive and provide lasting
           solutions for our customers, we’re committed to five core values here
           at Huble. Five things that we hold dear, and that guide us in the
