@@ -83,7 +83,7 @@ export default function ForgotPassword() {
                     aria-hidden="true"
                   />
                 </span>
-                Sign up
+                Rest Password
               </button>
             </div>
             <div className="text-sm text-center">

@@ -27,11 +27,23 @@ export default function Login() {
       setLoading(true)
       await login(emailRef.current?.value, passwordRef.current?.value)
       navigate('/')
-    } catch {
-      setError('Failed to log in')
+    } catch (error) {
+      const errorMessage = getErrorMessage(error)
+      setError(errorMessage || 'Failed to log in')
     }
 
     setLoading(false)
+  }
+  const getErrorMessage = (error: any) => {
+    // Map Firebase error codes to user-friendly messages
+    switch (error.code) {
+      case 'auth/invalid-login-credentials':
+        return 'Invalid email or password'
+      // Add more cases for other Firebase error codes if needed
+
+      default:
+        return error.message || 'Failed to log in'
+    }
   }
   return (
     <>
