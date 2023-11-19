@@ -41,17 +41,19 @@ const WhoWeAreCard = () => {
       </div>
 
       {/* Right side */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 ">
         {/* Embed your video component here */}
-        <iframe
-          width="500"
-          height="315"
-          src="https://www.youtube.com/embed/NRPekuPcLic?si=YWm7AGiod-tA10LG"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <div className="aspect-w-16 aspect-h-9 max-w-full mx-auto  ">
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/NRPekuPcLic?si=YWm7AGiod-tA10LG"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   )
