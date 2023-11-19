@@ -7,7 +7,11 @@ import CardFour from './Home-Content/YouCanGrowCard'
 import CardFive from './Home-Content/InspiredCard'
 import CardSix from './Home-Content/ValuedCard'
 
-const AnimatedCard = ({ children }) => {
+interface AnimatedCardProps {
+  children: React.ReactNode
+}
+
+const AnimatedCard: React.FC<AnimatedCardProps> = ({ children }) => {
   const props = useSpring({
     from: { opacity: 0, transform: 'translateY(50px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
