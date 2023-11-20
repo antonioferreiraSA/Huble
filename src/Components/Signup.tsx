@@ -28,11 +28,23 @@ export default function Signup() {
       setLoading(true)
       await signup(emailRef.current?.value, passwordRef.current?.value)
       navigate('/')
-    } catch {
-      setError('Failed to create an account')
+    } catch (error) {
+      const errorMessage = getErrorMessage(error)
+      setError(errorMessage || 'Failed to create an account')
     }
 
     setLoading(false)
+  }
+
+  const getErrorMessage = (error: any) => {
+    switch (error?.code) {
+      case 'auth/email-already-in-use':
+        return 'The email address is already in use.'
+      // Add more cases for other Firebase error codes if needed
+
+      default:
+        return error?.message || 'Failed to create an account'
+    }
   }
 
   return (
