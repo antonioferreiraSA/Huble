@@ -13,7 +13,7 @@
 - Node Version v18
 
 # Live link to the repo
-- [Demo](https://velvety-malasada-697a7d.netlify.app/](https://marvelous-cranachan-8adb74.netlify.app/ )
+- [Demo](https://www.npmjs.com/)
 
 ## Node Version v18
 if you have nvm run this command from the root to use the same node version i am using 
