@@ -41,9 +41,9 @@ const WhoWeAreCard = () => {
       </div>
 
       {/* Right side */}
-      <div className=" md:w-1/2  ">
+      <div className=" md:w-1/2 max-w  ">
         {/* Embed your video component here */}
-        <div className="aspect-w-16 aspect-h-9 max-w-full mx-auto   overflow-x-visible  ">
+        <div className="aspect-w-16 aspect-h-9 max-w-full mx-auto overflow-hidden  ">
           <iframe
             width="500"
             height="315"
